@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rishabh Tripathi — Senior DevOps Engineer</title>
+<meta name="description" content="Senior DevOps Engineer specializing in AWS, Kubernetes, Terraform, Databricks, cloud cost optimization and DevSecOps." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script>
+  // Apply theme before first paint to avoid a flash of the wrong theme.
+  // Default is dark; a visitor's saved choice (light or dark) always wins.
+  (function () {
+    try {
+      var saved = localStorage.getItem("portfolio-theme");
+      document.documentElement.setAttribute("data-theme", saved === "light" ? "light" : "dark");
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+</script>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">rishabh<span>.</span>tripathi</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#achievements" data-nav>Achievements</a></li>
+      <li><a href="#experience" data-nav>Experience</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-grid"></div>
+  <div class="wrap hero-inner">
+    <div>
+      <h1 class="hero-title">Rishabh Tripathi<br/>builds cloud infrastructure that <span class="accent">stays up, costs less, and scales.</span></h1>
+      <p class="hero-sub">Senior DevOps Engineer with 6.5+ years designing, automating and securing AWS infrastructure — including a stint as a founding engineer building an entire platform from zero. I turn manual toil into self-service systems and cloud bills into cost wins.</p>
+      <div class="hero-tags">
+        <span class="hero-tag">AWS</span>
+        <span class="hero-tag">Kubernetes</span>
+        <span class="hero-tag">Terraform</span>
+        <span class="hero-tag">Databricks</span>
+        <span class="hero-tag">DevSecOps</span>
+        <span class="hero-tag">FinOps</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:tripathirishabh.devops@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M4 6h16v12H4z"/><path d="M4 6l8 7 8-7"/></svg>
+          Get in touch
+        </a>
+        <a class="btn btn-ghost" href="https://in.linkedin.com/in/rishabhtripathi123" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V23h-4v-6.7c0-1.6-.03-3.66-2.23-3.66-2.24 0-2.58 1.75-2.58 3.55V23h-4V8.5z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring"></div>
+      <div class="hero-photo"><img src="assets/img/profile.jpg" alt="Rishabh Tripathi" /></div>
+    </div>
+  </div>
+  <div class="scroll-cue">SCROLL <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow-tag"><span class="eyebrow-index">01</span><span class="eyebrow-label">About</span><span class="eyebrow-line"></span></span>
+      <h2 class="section-title">Builder-owner, measured in outcomes</h2>
+    </div>
+    <div class="reveal" style="max-width:760px">
+      <p style="font-size:16.5px;color:var(--text-secondary)">
+        I've spent 6.5+ years owning cloud infrastructure end-to-end — not just running it, but redesigning it. That includes a stint as a <strong style="color:var(--text-primary)">founding DevOps engineer</strong>, building an entire AWS platform from a blank slate: networking, Kubernetes, CI/CD, security, all from zero. I default to measuring my own work in numbers rather than activity — cost cuts, latency drops, hours saved — and I treat security and compliance as part of the job, not someone else's department. On-call, root-cause debugging, and mentoring engineers are all part of how I work, not extras.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow-tag"><span class="eyebrow-index">02</span><span class="eyebrow-label">Impact</span><span class="eyebrow-line"></span></span>
+      <h2 class="section-title">Numbers I'd stake my reputation on</h2>
+    </div>
+    <div class="bento-grid reveal">
+
+      <div class="bento-card featured">
+        <div class="bento-glow"></div>
+        <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6L13.5 14.5 8.5 9.5 2 16"/><path d="M16 6h6v6"/></svg></div>
+        <div>
+          <div class="bento-value"><span class="counter" data-target="61" data-suffix="%">0</span></div>
+          <div class="bento-label">Cut Databricks infrastructure cost — <strong>~$12.5K → ~$4.85K/month</strong> (~$92K/year saved), with <strong>zero SLA regressions</strong>. <a href="https://medium.com/@rishabhtripathi714/how-i-cut-our-databricks-bill-by-61-in-six-weeks-a-reproducible-playbook-61f49ea89d7c" target="_blank" rel="noopener" style="color:var(--accent);font-weight:700;white-space:nowrap">Read the playbook →</a></div>
+        </div>
+      </div>
+
+      <div class="bento-card featured">
+        <div class="bento-glow"></div>
+        <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 01-10 0V4z"/><path d="M5 4H3v2a4 4 0 004 4M19 4h2v2a4 4 0 01-4 4"/></svg></div>
+        <div>
+          <div class="bento-value">1<span style="font-size:22px">st</span> place</div>
+          <div class="bento-label">Aspora AI Hackathon 2026, company-wide — architected <strong>RetentionIQ</strong> end to end in a single <strong>36-hour</strong> build window.</div>
+        </div>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <div>
+          <div class="bento-value">$<span class="counter" data-target="62" data-suffix="K→30K">0</span></div>
+          <div class="bento-label">Monthly AWS spend reduced at Shiprocket/Omuni through resource-level optimization.</div>
+        </div>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="6" rx="1.5"/><rect x="2" y="15" width="20" height="6" rx="1.5"/><line x1="6" y1="6" x2="6" y2="6"/><line x1="6" y1="18" x2="6" y2="18"/></svg></div>
+        <div>
+          <div class="bento-value"><span class="counter" data-target="99" data-suffix="+">0</span></div>
+          <div class="bento-label">Microservices run in production Kubernetes clusters, autoscaled through peak traffic.</div>
+        </div>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div>
+          <div class="bento-value"><span class="counter" data-target="5" data-suffix="+">0</span></div>
+          <div class="bento-label">Engineers mentored across DevOps and support functions, three companies running.</div>
+        </div>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div>
+          <div class="bento-value">Min → Sec</div>
+          <div class="bento-label">Redshift query queue-wait time, after diagnosing a workload-management misconfiguration.</div>
+        </div>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <div>
+          <div class="bento-value">5m → &lt;2s</div>
+          <div class="bento-label">Metabase dashboard load time, after root-causing a silent caching config failure.</div>
+        </div>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div>
+          <div class="bento-value">½ day → Clicks</div>
+          <div class="bento-label">CDC data backfill effort, after building a self-service Backfill Manager.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow-tag"><span class="eyebrow-index">03</span><span class="eyebrow-label">Career</span><span class="eyebrow-line"></span></span>
+      <h2 class="section-title">Where the impact happened</h2>
+    </div>
+
+    <div class="exp-shell reveal">
+      <div class="exp-rail" id="expRail">
+        <button class="exp-tab active" data-exp="aspora">
+          <span class="exp-tab-dot"></span>
+          <span class="exp-tab-info">
+            <span class="exp-tab-role">Senior DevOps Engineer</span>
+            <span class="exp-tab-company">Aspora</span>
+            <span class="exp-tab-date">Jun 2025 — Present</span>
+          </span>
+        </button>
+        <button class="exp-tab" data-exp="mstack">
+          <span class="exp-tab-dot"></span>
+          <span class="exp-tab-info">
+            <span class="exp-tab-role">Founding DevOps Engineer</span>
+            <span class="exp-tab-company">Mstack AI</span>
+            <span class="exp-tab-date">Mar 2025 — Jun 2025</span>
+          </span>
+        </button>
+        <button class="exp-tab" data-exp="pharmeasy">
+          <span class="exp-tab-dot"></span>
+          <span class="exp-tab-info">
+            <span class="exp-tab-role">DevOps Engineer</span>
+            <span class="exp-tab-company">PharmEasy</span>
+            <span class="exp-tab-date">Jan 2024 — Feb 2025</span>
+          </span>
+        </button>
+        <button class="exp-tab" data-exp="shiprocket">
+          <span class="exp-tab-dot"></span>
+          <span class="exp-tab-info">
+            <span class="exp-tab-role">DevOps Engineer II</span>
+            <span class="exp-tab-company">Shiprocket / Omuni</span>
+            <span class="exp-tab-date">Oct 2021 — Jan 2024</span>
+          </span>
+        </button>
+        <button class="exp-tab" data-exp="cognizant">
+          <span class="exp-tab-dot"></span>
+          <span class="exp-tab-info">
+            <span class="exp-tab-role">Program Analyst Trainee</span>
+            <span class="exp-tab-company">Cognizant</span>
+            <span class="exp-tab-date">Feb 2021 — Sep 2021</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="exp-panels" id="expPanels">
+
+        <div class="exp-panel active" data-exp="aspora">
+          <div class="exp-panel-head">
+            <h3>Senior DevOps Engineer <span>@ Aspora</span></h3>
+            <span class="exp-panel-date">Jun 2025 — Present</span>
+          </div>
+          <p class="exp-tagline">Owning cloud and data-platform infrastructure end to end — architecture, cost, security, and on-call.</p>
+          <ul class="exp-highlights">
+            <li>Led the ETL redesign from self-hosted Apache Airflow to Databricks, architecting a CDC framework for real-time ingestion</li>
+            <li>Cut Databricks infra cost <span class="hl-metric">61%</span> (~$12.5K → ~$4.85K/month); drove <span class="hl-metric">~$10K/mo</span> in additional AWS savings</li>
+            <li>Migrated networking from VPC peering to AWS Transit Gateway; led a <span class="hl-metric">zero-downtime</span> RDS migration from AMD to Graviton</li>
+            <li>Built a CDC Backfill Manager, cutting backfill effort from a half-day manual process to <span class="hl-metric">a few clicks</span></li>
+            <li>Diagnosed a Redshift workload-management issue that cut query queue-wait from <span class="hl-metric">minutes to seconds</span>, and a silent Metabase caching failure that took dashboard load times from <span class="hl-metric">5+ min to &lt;2s</span></li>
+            <li>Led PII data governance and ScoutSuite-based cloud security posture scanning; conducted VAPT across infrastructure</li>
+            <li>Designed and provisioned infrastructure for the Wealth vertical, partnering directly with the Tradelabs team to stand up and scale their services</li>
+            <li>Supported the ECS → EKS migration, contributing to containerized workload orchestration modernization</li>
+            <li>Owned DevOps on-call end-to-end, including production root-cause debugging; mentored <span class="hl-metric">3</span> support engineers</li>
+          </ul>
+          <div class="photo-strip" data-gallery="aspora">
+            <img src="assets/img/aspora_certificate.jpg" alt="Aspora AI Hackathon 2026 winner certificate — Rishabh Tripathi, RetentionIQ" loading="lazy" />
+            <img src="assets/img/aspora_trophy_solo.jpg" alt="Rishabh with the Aspora AI Hackathon trophy" loading="lazy" />
+            <img src="assets/img/aspora_trophy_team.jpg" alt="Rishabh and a teammate with the Aspora AI Hackathon trophy" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="exp-panel" data-exp="mstack">
+          <div class="exp-panel-head">
+            <h3>Founding DevOps Engineer <span>@ Mstack AI</span></h3>
+            <span class="exp-panel-date">Mar 2025 — Jun 2025</span>
+          </div>
+          <p class="exp-tagline">First engineering hire — built the company's entire cloud platform from a blank slate.</p>
+          <ul class="exp-highlights">
+            <li>First infrastructure hire: built the company's entire AWS platform <span class="hl-metric">from zero</span> in Terraform — VPC, subnets, NAT gateways, route tables, security groups</li>
+            <li>Provisioned Amazon EKS on Graviton ARM64 node groups; automated microservice deployment via Kubernetes manifests (Deployments, Services, ConfigMaps, Secrets, Ingress) for reproducible deploys across environments</li>
+            <li>Built CI/CD from scratch on GitHub Actions with IAM OIDC federation (<span class="hl-metric">zero static credentials</span>), including environment-based promotion logic and secrets injected via GitHub Secrets/repo variables at runtime</li>
+            <li>Ran self-managed Apache Airflow (KubernetesExecutor) and Apache APISIX API gateway on EKS; centralized logging via OpenSearch + Fluent Bit</li>
+            <li>Deployed Listmonk and Metabase on EKS for internal notifications and BI, plus additional services on ECS (Fargate/EC2) with utilization-based autoscaling</li>
+            <li>Implemented bastion-host access, Kubernetes RBAC, least-privilege IAM; integrated AWS CodeGuru Reviewer, branch protection and commit signing</li>
+            <li>Set up Uptime Kuma monitoring with Slack/email alerting; followed GitOps principles with documentation for reproducibility</li>
+          </ul>
+        </div>
+
+        <div class="exp-panel" data-exp="pharmeasy">
+          <div class="exp-panel-head">
+            <h3>DevOps Engineer <span>@ PharmEasy</span></h3>
+            <span class="exp-panel-date">Jan 2024 — Feb 2025</span>
+          </div>
+          <p class="exp-tagline">Kept a high-traffic healthcare platform's infrastructure cost-efficient and observable.</p>
+          <ul class="exp-highlights">
+            <li>Automated IP whitelisting and RDS modifications via Jenkins pipelines; automated NACL changes with Terraform</li>
+            <li>Migrated services to Graviton via blue-green RDS deployment; drove AWS cost reduction through resource optimization</li>
+            <li>Provisioned Victoria Metrics alerting across EC2, Kubernetes and Kafka; configured CloudWatch RDS monitoring</li>
+            <li>Integrated Jenkins with JumpCloud SSO; debugged application logging issues across the ELK stack</li>
+            <li>Partnered with the InfoSec team to remediate security findings; drove AWS resource tagging to enable resource-level alerting</li>
+            <li>Documented infrastructure projects and ran internal tech sessions to share DevOps practices with the team</li>
+          </ul>
+          <div class="photo-strip" data-gallery="pharmeasy">
+            <img src="assets/img/pharmeasy_office.jpg" alt="Rishabh at the PharmEasy office" loading="lazy" />
+            <img src="assets/img/pharmeasy_hackathon.jpg" alt="Rishabh at the PharmEasy HackEasy hackathon" loading="lazy" />
+            <img src="assets/img/pharmeasy_team_dinner.jpg" alt="Rishabh with the PharmEasy team" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="exp-panel" data-exp="shiprocket">
+          <div class="exp-panel-head">
+            <h3>DevOps Engineer II <span>@ Shiprocket / Omuni</span></h3>
+            <span class="exp-panel-date">Oct 2021 — Jan 2024</span>
+          </div>
+          <p class="exp-tagline">Built fulfillment infrastructure from scratch and scaled it to 99+ services in production.</p>
+          <ul class="exp-highlights">
+            <li>Built the Omuni fulfillment infrastructure from scratch: Elasticsearch, ELK centralized logging, EKS</li>
+            <li>Managed <span class="hl-metric">99+</span> microservices on Kubernetes with HPA through peak traffic; deployed <span class="hl-metric">20+</span> microservices; ran Jenkins, Nexus, SonarQube, Kafka/Kafdrop</li>
+            <li>Reduced AWS cost from <span class="hl-metric">$62,000</span> to <span class="hl-metric">$30K–$32K</span>/month; set up Prometheus/Grafana monitoring; automated deployments via Lambda</li>
+            <li>Deployed Nginx-based proxy servers and managed MongoDB (GUI-based) alongside SQL/RDS databases — user access, performance and security, with automated shell-script maintenance</li>
+            <li>Set up S3 lifecycle policies, subdomain routing and ElastiCache (Redis); administered Bitbucket/GitLab repository access; stood up Freshdesk for ticketing</li>
+            <li>Led monthly/quarterly/semi-annual SOC 2 audit prep; patched servers for VAPT compliance (Nessus); mentored <span class="hl-metric">2</span> engineers</li>
+          </ul>
+          <div class="photo-strip" data-gallery="omuni">
+            <img src="assets/img/shiprocket_building.jpg" alt="Shiprocket office building at night" loading="lazy" />
+            <img src="assets/img/shiprocket_badge.jpg" alt="Rishabh's Shiprocket employee ID badge" loading="lazy" />
+            <img src="assets/img/shiprocket_team.jpg" alt="Rishabh with the Shiprocket team in the office lobby" loading="lazy" />
+            <img src="assets/img/omuni_team.jpg" alt="Rishabh with the Omuni team at the office" loading="lazy" />
+            <img src="assets/img/omuni_dinner.jpg" alt="Rishabh with Shiprocket/Omuni colleagues" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="exp-panel" data-exp="cognizant">
+          <div class="exp-panel-head">
+            <h3>Program Analyst Trainee <span>@ Cognizant Technology Solutions</span></h3>
+            <span class="exp-panel-date">Feb 2021 — Sep 2021</span>
+          </div>
+          <p class="exp-tagline">Early-career cloud microservice delivery for a national identity-linked government system.</p>
+          <ul class="exp-highlights">
+            <li>Built and deployed <span class="hl-metric">5</span> cloud microservices for an Aadhaar-based pensioner details system</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow-tag"><span class="eyebrow-index">04</span><span class="eyebrow-label">Featured Build</span><span class="eyebrow-line"></span></span>
+      <h2 class="section-title">Two builds worth a closer look</h2>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-top">
+        <div>
+          <span class="project-badge">🏆 36-hour build · 1st place, company-wide · team of 2</span>
+          <div class="project-title">RetentionIQ — churn prediction &amp; AI-diagnosis platform</div>
+        </div>
+      </div>
+      <p class="project-desc">
+        Built for Aspora's ~89K churned-user base. Manually investigating why one user churned meant piecing together order history, KYC/SLA records, support conversations and internal Slack threads by hand — <strong style="color:var(--text-primary)">30+ minutes per user</strong>. RetentionIQ replaces that with a tiered, interface-driven pipeline: a 6-CTE Redshift query classifies every churned user into a CPS (Churn Probability Score) risk tier, a collector layer pulls context from Redshift, Databricks (Intercom/Decagon conversations) and Slack, and a Claude-powered analysis layer — Sonnet for the highest-risk tier, Haiku for the rest — generates root-cause diagnosis and ranked retention actions, cutting the investigation to <strong style="color:var(--text-primary)">under 60 seconds per user</strong>.
+      </p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 700 620" width="100%" style="min-width:520px;max-width:640px;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,6 L8,3 z" fill="var(--accent)"></path>
+            </marker>
+          </defs>
+          <style>
+            .node-box{fill:var(--bg-card);stroke:var(--border);stroke-width:1.5;}
+            .node-title{fill:var(--text-primary);font:700 12.5px var(--font-sans, sans-serif);}
+            .node-sub{fill:var(--text-muted);font:10.5px var(--font-mono, monospace);}
+            .step-chip{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1;}
+            .step-text{fill:var(--accent);font:700 10px var(--font-mono, monospace);}
+            .flow{stroke:var(--accent);stroke-width:1.5;fill:none;marker-end:url(#arrow2);}
+          </style>
+
+          <!-- Row 1: sources -->
+          <rect x="10" y="10" width="160" height="50" rx="10" class="node-box"/>
+          <text x="90" y="32" text-anchor="middle" class="node-title">Redshift</text>
+          <text x="90" y="48" text-anchor="middle" class="node-sub">orders · KYC · SLA</text>
+
+          <rect x="180" y="10" width="160" height="50" rx="10" class="node-box"/>
+          <text x="260" y="32" text-anchor="middle" class="node-title">Databricks</text>
+          <text x="260" y="48" text-anchor="middle" class="node-sub">Intercom · Decagon</text>
+
+          <rect x="350" y="10" width="160" height="50" rx="10" class="node-box"/>
+          <text x="430" y="32" text-anchor="middle" class="node-title">Slack API</text>
+          <text x="430" y="48" text-anchor="middle" class="node-sub">CX / ops threads</text>
+
+          <rect x="520" y="10" width="170" height="50" rx="10" class="node-box"/>
+          <text x="605" y="32" text-anchor="middle" class="node-title">PostgreSQL</text>
+          <text x="605" y="48" text-anchor="middle" class="node-sub">analysis · outcomes</text>
+
+          <path class="flow" d="M90,60 L90,90 L340,90"/>
+          <path class="flow" d="M260,60 L260,90"/>
+          <path class="flow" d="M430,60 L430,90 L340,90"/>
+
+          <!-- Row 2: Collector layer -->
+          <rect x="60" y="95" width="560" height="54" rx="10" class="node-box" style="stroke:var(--accent)"/>
+          <text x="340" y="117" text-anchor="middle" class="node-title">Collector Layer</text>
+          <text x="340" y="135" text-anchor="middle" class="node-sub">RedshiftCollector · DatabricksCollector · SlackCollector (deferred)</text>
+
+          <path class="flow" d="M340,149 L340,179"/>
+
+          <!-- Row 3: Pipeline engine with 4 steps -->
+          <rect x="60" y="184" width="560" height="90" rx="10" class="node-box" style="stroke:var(--accent)"/>
+          <text x="340" y="204" text-anchor="middle" class="node-title">Pipeline Engine (chain-of-responsibility)</text>
+
+          <rect x="78" y="216" width="120" height="42" rx="8" class="step-chip"/>
+          <text x="138" y="234" text-anchor="middle" class="step-text">GATHER</text>
+          <text x="138" y="248" text-anchor="middle" class="node-sub">context</text>
+
+          <rect x="212" y="216" width="120" height="42" rx="8" class="step-chip"/>
+          <text x="272" y="234" text-anchor="middle" class="step-text">BUILD</text>
+          <text x="272" y="248" text-anchor="middle" class="node-sub">prompt</text>
+
+          <rect x="346" y="216" width="120" height="42" rx="8" class="step-chip"/>
+          <text x="406" y="234" text-anchor="middle" class="step-text">ANALYZE</text>
+          <text x="406" y="248" text-anchor="middle" class="node-sub">Sonnet / Haiku</text>
+
+          <rect x="480" y="216" width="120" height="42" rx="8" class="step-chip"/>
+          <text x="540" y="234" text-anchor="middle" class="step-text">STORE</text>
+          <text x="540" y="248" text-anchor="middle" class="node-sub">results</text>
+
+          <path class="flow" d="M198,237 L212,237"/>
+          <path class="flow" d="M332,237 L346,237"/>
+          <path class="flow" d="M466,237 L480,237"/>
+
+          <path class="flow" d="M340,274 L340,304"/>
+
+          <!-- CPS tier callout -->
+          <rect x="60" y="309" width="560" height="66" rx="10" class="node-box" stroke-dasharray="4 3"/>
+          <text x="340" y="329" text-anchor="middle" class="node-title">CPS Risk Tiers (6-CTE Redshift query)</text>
+          <text x="150" y="350" text-anchor="middle" class="node-sub">P90 Critical → Sonnet</text>
+          <text x="340" y="350" text-anchor="middle" class="node-sub">P70 High → Haiku</text>
+          <text x="530" y="350" text-anchor="middle" class="node-sub">P50 Moderate → Haiku</text>
+          <text x="340" y="366" text-anchor="middle" class="node-sub" style="font-size:9.5px">recency, login gap, failures, refunds — classifies every churned user before analysis</text>
+
+          <path class="flow" d="M340,375 L340,405"/>
+
+          <!-- Row 4: Hono API -->
+          <rect x="140" y="410" width="420" height="50" rx="10" class="node-box"/>
+          <text x="350" y="432" text-anchor="middle" class="node-title">Hono API Server</text>
+          <text x="350" y="448" text-anchor="middle" class="node-sub">/batch · /dashboard · /users</text>
+
+          <path class="flow" d="M350,460 L350,490"/>
+
+          <!-- Row 5: Next.js dashboard -->
+          <rect x="140" y="495" width="420" height="50" rx="10" class="node-box"/>
+          <text x="350" y="517" text-anchor="middle" class="node-title">Next.js Dashboard</text>
+          <text x="350" y="533" text-anchor="middle" class="node-sub">stats · charts · user detail · timeline</text>
+
+          <path class="flow" d="M350,545 L350,565"/>
+
+          <!-- Self-learning loop -->
+          <rect x="130" y="570" width="440" height="42" rx="10" class="node-box" style="stroke-dasharray:4 3"/>
+          <text x="350" y="588" text-anchor="middle" class="node-title" style="font-size:11px">Self-learning loop</text>
+          <text x="350" y="602" text-anchor="middle" class="node-sub" style="font-size:9.5px">intervention outcomes feed back into future prompts</text>
+        </svg>
+      </div>
+      <p style="color:var(--text-secondary);font-size:14.5px">
+        Every data source, AI provider and storage backend sits behind a swappable TypeScript interface — the pipeline never imports a concrete implementation directly, so adding a new data source or swapping Claude for another model is a config change, not a rewrite. Built as a two-person team in a single 36-hour hackathon.
+      </p>
+    </div>
+
+    <div class="project-card reveal" style="margin-top:24px">
+      <div class="project-top">
+        <div>
+          <span class="project-badge">📉 6-week project · 61% cost cut · ~$92K/year saved</span>
+          <div class="project-title">Databricks Cost Optimization — a reproducible playbook</div>
+        </div>
+      </div>
+      <p class="project-desc">
+        Took our Databricks spend from ~$418/day to ~$162/day — <strong style="color:var(--text-primary)">61% lower, zero business impact</strong> — with no vendor discounts and no licensing tricks, just six measured engineering changes. Databricks' defaults optimize for developer convenience, not cost: serverless everywhere, performance-optimized pipelines, continuous fan-out jobs, and retry-heavy orchestration each make sense individually, but quietly compound into overspend at scale. Every number below was measured directly from <code style="background:var(--bg-elevated);padding:1px 6px;border-radius:4px;font-family:var(--font-mono);font-size:13px">system.billing.usage</code> — no guessing, no vendor TCO calculators.
+      </p>
+
+      <div class="technique-grid">
+        <div class="technique-card">
+          <div class="technique-num">1</div>
+          <div class="technique-title">Cost visibility first</div>
+          <div class="technique-impact">found the fat</div>
+          <div class="technique-desc">Queried billing system tables directly instead of the coarse Usage UI. Found 80% of spend in 5 line items, and 11,144 "Untitled" jobs quietly costing $220+/day.</div>
+        </div>
+        <div class="technique-card">
+          <div class="technique-num">2</div>
+          <div class="technique-title">Idempotency guards</div>
+          <div class="technique-impact">eliminated no-ops</div>
+          <div class="technique-desc">A cheap metadata-only check skips Silver transforms when Bronze hasn't advanced. ~40–60% of scheduled runs were paying full price for no new data.</div>
+        </div>
+        <div class="technique-card">
+          <div class="technique-num">3</div>
+          <div class="technique-title">DLT: PERFORMANCE_OPTIMIZED → STANDARD</div>
+          <div class="technique-impact">38–45% cheaper</div>
+          <div class="technique-desc">Runtime rose (8min → 30min on one pipeline) but cost fell sharply — the only real constraint was SLA completion time, not runtime itself.</div>
+        </div>
+        <div class="technique-card">
+          <div class="technique-num">4</div>
+          <div class="technique-title">Serverless → Photon job clusters</div>
+          <div class="technique-impact">~2.6× cheaper DBUs</div>
+          <div class="technique-desc">Migrated from Jobs Serverless (~$0.39/DBU) to dedicated Graviton + Photon job clusters (~$0.15/DBU) for predictable batch workloads.</div>
+        </div>
+        <div class="technique-card">
+          <div class="technique-num">5</div>
+          <div class="technique-title">Graceful empty-source exits</div>
+          <div class="technique-impact">5–8% savings</div>
+          <div class="technique-desc">Expected empty states (empty S3 prefixes, upstream tables not yet created) now exit cleanly instead of failing and triggering retries.</div>
+        </div>
+        <div class="technique-card">
+          <div class="technique-num">6</div>
+          <div class="technique-title">Fan-out consolidation</div>
+          <div class="technique-impact">~$220/day removed</div>
+          <div class="technique-desc">Thousands of independently-spawned serverless fan-out tasks, each with its own cold start, collapsed into tasks on the parent job's own cluster.</div>
+        </div>
+      </div>
+
+      <div class="code-label">The idempotency guard (step 2) — one of the highest-leverage changes</div>
+      <div class="code-block"><pre>def has_new_bronze_data(bronze_table: str, silver_checkpoint_path: str) -> bool:
+    bronze_version = (
+        spark.sql(f"DESCRIBE HISTORY {bronze_table} LIMIT 1")
+             .collect()[0]["version"]
+    )
+    last_processed = read_checkpoint(silver_checkpoint_path)
+    return bronze_version > last_processed
+
+if not has_new_bronze_data(BRONZE_TABLE, CHECKPOINT_PATH):
+    dbutils.notebook.exit("skip: no new bronze data")</pre></div>
+
+      <p style="color:var(--text-secondary);font-size:14.5px">
+        The single biggest realization: Databricks costs are rarely dominated by "big data" itself — they're dominated by orchestration patterns, retry behavior, cold starts, and fragmented workloads. Most teams don't have a Spark problem, they have a workload-shape problem.
+        <a href="https://medium.com/@rishabhtripathi714/how-i-cut-our-databricks-bill-by-61-in-six-weeks-a-reproducible-playbook-61f49ea89d7c" target="_blank" rel="noopener" style="color:var(--accent);font-weight:700;white-space:nowrap;margin-left:6px">Read the full playbook →</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow-tag"><span class="eyebrow-index">05</span><span class="eyebrow-label">Toolbox</span><span class="eyebrow-line"></span></span>
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+    </div>
+    <div class="reveal">
+      <div class="skill-filters" id="skillFilters">
+        <button class="skill-filter active" data-filter="all">All</button>
+        <button class="skill-filter" data-filter="cloud">Cloud &amp; IaC</button>
+        <button class="skill-filter" data-filter="containers">Containers</button>
+        <button class="skill-filter" data-filter="cicd">CI/CD</button>
+        <button class="skill-filter" data-filter="data">Data Platform</button>
+        <button class="skill-filter" data-filter="security">Security</button>
+        <button class="skill-filter" data-filter="observability">Observability</button>
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+        <span class="skill-chip" data-cat="cloud">AWS (EC2, ECS, EKS, Lambda, RDS, S3, VPC)</span>
+        <span class="skill-chip" data-cat="cloud">Transit Gateway</span>
+        <span class="skill-chip" data-cat="cloud">Route 53 / CloudFront / WAF</span>
+        <span class="skill-chip" data-cat="cloud">API Gateway / SNS / SQS / SES</span>
+        <span class="skill-chip" data-cat="cloud">IAM / OIDC federation</span>
+        <span class="skill-chip" data-cat="cloud">Terraform</span>
+        <span class="skill-chip" data-cat="cloud">CloudFormation</span>
+        <span class="skill-chip" data-cat="cloud">Ansible</span>
+        <span class="skill-chip" data-cat="containers">Kubernetes (EKS)</span>
+        <span class="skill-chip" data-cat="containers">Docker</span>
+        <span class="skill-chip" data-cat="containers">ECS (Fargate/EC2)</span>
+        <span class="skill-chip" data-cat="containers">RBAC / GitOps</span>
+        <span class="skill-chip" data-cat="cicd">GitHub Actions</span>
+        <span class="skill-chip" data-cat="cicd">Jenkins</span>
+        <span class="skill-chip" data-cat="cicd">ArgoCD</span>
+        <span class="skill-chip" data-cat="cicd">SonarQube / Nexus</span>
+        <span class="skill-chip" data-cat="data">Databricks</span>
+        <span class="skill-chip" data-cat="data">Apache Airflow</span>
+        <span class="skill-chip" data-cat="data">CDC / Debezium</span>
+        <span class="skill-chip" data-cat="data">Kafka</span>
+        <span class="skill-chip" data-cat="data">PySpark</span>
+        <span class="skill-chip" data-cat="data">Redshift</span>
+        <span class="skill-chip" data-cat="data">Metabase</span>
+        <span class="skill-chip" data-cat="security">VAPT (Nessus)</span>
+        <span class="skill-chip" data-cat="security">ScoutSuite</span>
+        <span class="skill-chip" data-cat="security">PII data governance</span>
+        <span class="skill-chip" data-cat="security">SOC 2 audit prep</span>
+        <span class="skill-chip" data-cat="security">TLS / IAM auth</span>
+        <span class="skill-chip" data-cat="observability">Prometheus</span>
+        <span class="skill-chip" data-cat="observability">Grafana</span>
+        <span class="skill-chip" data-cat="observability">Victoria Metrics</span>
+        <span class="skill-chip" data-cat="observability">ELK / Elasticsearch</span>
+        <span class="skill-chip" data-cat="observability">CloudWatch</span>
+        <span class="skill-chip" data-cat="observability">Uptime Kuma</span>
+        <span class="skill-chip" data-cat="cloud">Python / Bash</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap reveal">
+    <div class="contact-card">
+      <span class="eyebrow-tag" style="margin-left:auto;margin-right:auto"><span class="eyebrow-index">06</span><span class="eyebrow-label">Let's Talk</span><span class="eyebrow-line"></span></span>
+      <h2 class="section-title">Let's talk infrastructure</h2>
+      <p style="color:var(--text-secondary);max-width:520px;margin:14px auto 0">
+        Always up for a conversation on cloud architecture, cost optimization, or DevSecOps — whether that's advice, a technical discussion, or just comparing notes. Reach out.
+      </p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:tripathirishabh.devops@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://in.linkedin.com/in/rishabhtripathi123" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    &copy; <span id="year"></span> Rishabh Tripathi · Built with plain HTML/CSS/JS, hosted on GitHub Pages
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <img id="lbImage" src="" alt="" />
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+  <div class="lb-caption" id="lbCaption"></div>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
