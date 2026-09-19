@@ -121,6 +121,22 @@
     });
   }
 
+  // ---------- Project "Read more" toggles ----------
+  document.querySelectorAll(".read-more-btn").forEach(function (btn) {
+    var labelEl = btn.querySelector("span");
+    var originalLabel = labelEl.textContent;
+    btn.addEventListener("click", function () {
+      var target = document.getElementById(btn.getAttribute("data-target"));
+      if (!target) return;
+      var isOpen = target.classList.toggle("open");
+      btn.classList.toggle("open", isOpen);
+      labelEl.textContent = isOpen ? "Show less" : originalLabel;
+      if (!isOpen) {
+        btn.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    });
+  });
+
   // ---------- Experience tab switcher ----------
   var expTabs = document.querySelectorAll(".exp-tab");
   var expPanels = document.querySelectorAll(".exp-panel");

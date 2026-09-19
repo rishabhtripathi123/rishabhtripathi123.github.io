@@ -183,7 +183,7 @@
           <span class="exp-tab-info">
             <span class="exp-tab-role">Senior DevOps Engineer</span>
             <span class="exp-tab-company">Aspora</span>
-            <span class="exp-tab-date">Jun 2025 — Present</span>
+            <span class="exp-tab-date">Jun 2025 — Aug 2026</span>
           </span>
         </button>
         <button class="exp-tab" data-exp="mstack">
@@ -216,6 +216,14 @@
             <span class="exp-tab-role">Program Analyst Trainee</span>
             <span class="exp-tab-company">Cognizant</span>
             <span class="exp-tab-date">Feb 2021 — Sep 2021</span>
+          </span>
+        </button>
+        <button class="exp-tab" data-exp="heptism">
+          <span class="exp-tab-dot"></span>
+          <span class="exp-tab-info">
+            <span class="exp-tab-role">Cloud Engineer (Intern)</span>
+            <span class="exp-tab-company">Heptism Technologies</span>
+            <span class="exp-tab-date">May 2019 — Nov 2020</span>
           </span>
         </button>
       </div>
@@ -318,6 +326,17 @@
           </ul>
         </div>
 
+        <div class="exp-panel" data-exp="heptism">
+          <div class="exp-panel-head">
+            <h3>Cloud Engineer (Intern) <span>@ Heptism Technologies</span></h3>
+            <span class="exp-panel-date">May 2019 — Nov 2020</span>
+          </div>
+          <p class="exp-tagline">First hands-on cloud work — deploying and hosting on AWS.</p>
+          <ul class="exp-highlights">
+            <li>Deployed and managed a WordPress site on AWS EC2, and hosted a static site on AWS S3</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </div>
@@ -329,13 +348,22 @@
       <span class="eyebrow-tag"><span class="eyebrow-index">04</span><span class="eyebrow-label">Featured Build</span><span class="eyebrow-line"></span></span>
       <h2 class="section-title">Two builds worth a closer look</h2>
     </div>
-    <div class="project-card reveal">
+    <div class="projects-grid">
+    <div class="project-card project-compact reveal">
       <div class="project-top">
         <div>
-          <span class="project-badge">🏆 36-hour build · 1st place, company-wide · team of 2</span>
+          <span class="project-badge">🏆 36-hour build · 1st place · team of 2</span>
           <div class="project-title">RetentionIQ — churn prediction &amp; AI-diagnosis platform</div>
         </div>
       </div>
+      <p class="project-teaser">
+        Churn-diagnosis platform for Aspora's ~89K churned-user base — replaces 30+ minute manual investigations with a Claude-powered pipeline that diagnoses root cause and ranks retention actions in under 60 seconds per user.
+      </p>
+      <button class="read-more-btn" data-target="details-retentioniq">
+        <span>Read the full build</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="project-details" id="details-retentioniq">
       <p class="project-desc">
         Built for Aspora's ~89K churned-user base. Manually investigating why one user churned meant piecing together order history, KYC/SLA records, support conversations and internal Slack threads by hand — <strong style="color:var(--text-primary)">30+ minutes per user</strong>. RetentionIQ replaces that with a tiered, interface-driven pipeline: a 6-CTE Redshift query classifies every churned user into a CPS (Churn Probability Score) risk tier, a collector layer pulls context from Redshift, Databricks (Intercom/Decagon conversations) and Slack, and a Claude-powered analysis layer — Sonnet for the highest-risk tier, Haiku for the rest — generates root-cause diagnosis and ranked retention actions, cutting the investigation to <strong style="color:var(--text-primary)">under 60 seconds per user</strong>.
       </p>
@@ -442,15 +470,24 @@
       <p style="color:var(--text-secondary);font-size:14.5px">
         Every data source, AI provider and storage backend sits behind a swappable TypeScript interface — the pipeline never imports a concrete implementation directly, so adding a new data source or swapping Claude for another model is a config change, not a rewrite. Built as a two-person team in a single 36-hour hackathon.
       </p>
+      </div>
     </div>
 
-    <div class="project-card reveal" style="margin-top:24px">
+    <div class="project-card project-compact reveal">
       <div class="project-top">
         <div>
-          <span class="project-badge">📉 6-week project · 61% cost cut · ~$92K/year saved</span>
+          <span class="project-badge">📉 6-week project · 61% cost cut</span>
           <div class="project-title">Databricks Cost Optimization — a reproducible playbook</div>
         </div>
       </div>
+      <p class="project-teaser">
+        Cut Databricks spend 61% (~$418/day → ~$162/day, ~$92K/year saved) through six measured engineering changes — no vendor discounts, no licensing tricks, just compute hygiene verified against real billing data.
+      </p>
+      <button class="read-more-btn" data-target="details-databricks">
+        <span>Read the full playbook</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="project-details" id="details-databricks">
       <p class="project-desc">
         Took our Databricks spend from ~$418/day to ~$162/day — <strong style="color:var(--text-primary)">61% lower, zero business impact</strong> — with no vendor discounts and no licensing tricks, just six measured engineering changes. Databricks' defaults optimize for developer convenience, not cost: serverless everywhere, performance-optimized pipelines, continuous fan-out jobs, and retry-heavy orchestration each make sense individually, but quietly compound into overspend at scale. Every number below was measured directly from <code style="background:var(--bg-elevated);padding:1px 6px;border-radius:4px;font-family:var(--font-mono);font-size:13px">system.billing.usage</code> — no guessing, no vendor TCO calculators.
       </p>
@@ -510,6 +547,8 @@ if not has_new_bronze_data(BRONZE_TABLE, CHECKPOINT_PATH):
         The single biggest realization: Databricks costs are rarely dominated by "big data" itself — they're dominated by orchestration patterns, retry behavior, cold starts, and fragmented workloads. Most teams don't have a Spark problem, they have a workload-shape problem.
         <a href="https://medium.com/@rishabhtripathi714/how-i-cut-our-databricks-bill-by-61-in-six-weeks-a-reproducible-playbook-61f49ea89d7c" target="_blank" rel="noopener" style="color:var(--accent);font-weight:700;white-space:nowrap;margin-left:6px">Read the full playbook →</a>
       </p>
+      </div>
+    </div>
     </div>
   </div>
 </section>
